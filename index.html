@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unwritten Rules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Search bar styles */
+        .search-container {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-container input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        .search-container button {
+            padding: 8px 15px;
+            margin-left: 5px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #e67e22;
+        }
+
+        section.intro {
+            background: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section.intro h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section.intro p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .tip-section {
+            margin: 20px 0;
+        }
+
+        .tip-section h3 {
+            background-color: #f39c12;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .sign {
+            margin: 15px 0;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        .sign b {
+            color: #f39c12;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 10px;
+        }
+
+        footer h3 {
+            margin-top: 0;
+            color: #f39c12;
+        }
+
+        footer p,
+        footer a {
+            color: white;
+            font-size: 0.9em;
+            text-decoration: none;
+        }
+
+        .back-to-top a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #f39c12;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/67577356d628acd8ad00b55f-1.png" alt="Unwritten Rules Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tips">Tips</a></li>
+            </ul>
+        </nav>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search tips..." onkeyup="searchTips()">
+            <button onclick="searchTips()">Search</button>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="intro">
+        <h2>Welcome to Unwritten Rules</h2>
+        <p>Explore helpful tips, advice, and strategies to navigate the complexities of relationships.</p>
+        <a href="#tips" class="cta">Explore Tips</a>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="content">
+        <h2>Relationship Tips</h2>
+        <div class="tip-section" data-keywords="love relationship">
+            <h3><a href="signs-shes-the-one.html">Signs She's the One</a></h3>
+            <p class="sign"><b>1. You don't need to try too hard for the love to work.</b><br>
+                Love just... works, like Wi-Fi that actually connects on the first try.</p>
+        </div>
+        <div class="tip-section" data-keywords="moving on grief healing">
+            <h3><a href="how-to-move-on.html">How to Move On</a></h3>
+            <p class="sign"><b>2. Take it one day at a time.</b><br>
+                Moving on requires patience. Allow yourself to grieve and heal without rushing into another relationship.</p>
+        </div>
+        <div class="tip-section" data-keywords="communication ex relationship">
+            <h3><a href="get-your-ex-back.html">How to Get Your Ex-Girlfriend Back</a></h3>
+            <p class="sign"><b>3. Give her space, then communicate honestly.</b><br>
+                Respect her decision to have space and, once the time is right, reach out to discuss what went wrong and how things can improve.</p>
+        </div>
+        <div class="tip-section" data-keywords="communication listening relationship">
+            <h3><a href="how-to-communicate-better.html">How to Communicate Better</a></h3>
+            <p class="sign"><b>4. Practice active listening.</b><br>
+                Good communication isn't just about talking. It's also about understanding your partner's feelings and expressing empathy.</p>
+        </div>
+        <div class="tip-section" data-keywords="trust relationship">
+            <h3><a href="how-to-build-trust.html">How to Build Trust</a></h3>
+            <p class="sign"><b>5. Be consistent and reliable.</b><br>
+                Trust grows when both partners show up for each other consistently and with integrity, especially during tough times.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>About Unwritten Rules</h3>
+            <p>This platform is dedicated to helping individuals navigate relationships with practical tips, strategies, and insights.</p>
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+            <p>Feel free to reach out to us!</p>
+            <p>Email: <a href="mailto:contact@unwrittenrules.com">contact@unwrittenrules.com</a></p>
+        </div>
+        <p>&copy; 2024 Unwritten Rules. All rights reserved.</p>
+        <div class="back-to-top">
+            <a href="#top">Back to Top</a>
+        </div>
+    </footer>
+
+    <script>
+        function searchTips() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            var tips = document.querySelectorAll(".tip-section");
+
+            tips.forEach(function(tip) {
+                var keywords = tip.getAttribute("data-keywords").toLowerCase();
+                if (keywords.includes(input)) {
+                    tip.style.display = "block"; // Show matching tips
+                } else {
+                    tip.style.display = "none"; // Hide non-matching tips
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
